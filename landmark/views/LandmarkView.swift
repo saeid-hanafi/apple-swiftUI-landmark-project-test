@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct LandmarkView: View {
+    var image: Image
+    
     var body: some View {
-        Image("twinlake")
+        image
             .clipShape(Circle())
             .overlay {
                 Circle().stroke(.blue, lineWidth: 1)
@@ -20,6 +22,6 @@ struct LandmarkView: View {
 
 struct LandmarkView_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkView()
+        LandmarkView(image: landmarks[1].image)
     }
 }
