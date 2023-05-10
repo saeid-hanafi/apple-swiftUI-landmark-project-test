@@ -21,6 +21,8 @@ struct LandmarkView: View {
 }
 
 struct LandmarkView_Previews: PreviewProvider {
+    private static var landmarks = ModelData().landmarks
+    
     static var previews: some View {
         LandmarkView(image: landmarks[1].image)
     }
