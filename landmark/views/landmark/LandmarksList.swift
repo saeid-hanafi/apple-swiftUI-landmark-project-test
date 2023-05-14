@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LandmarksList: View {
     @EnvironmentObject var modelData: ModelData
-    
+    @State private var showProfile: Bool = false
     @State private var favoriteOnly: Bool = false
     
     private var filteredLandmarks: [LandMarkData] {
@@ -31,7 +31,19 @@ struct LandmarksList: View {
                     }
                 }
             }
+            .listStyle(.inset)
             .navigationTitle("Landmarks")
+            .toolbar {
+                Button {
+                    showProfile.toggle()
+                } label: {
+                    Label("User Profile", systemImage: "person.crop.circle")
+                }
+            }
+            .sheet(isPresented: $showProfile) {
+                ProfileHost()
+                    .environmentObject(modelData)
+            }
         }
     }
 }
