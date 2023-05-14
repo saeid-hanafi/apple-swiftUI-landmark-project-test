@@ -5,7 +5,7 @@
         "city": "Skagway",
         "state": "Alaska",
         "id": 1003,
-        "isFeatured": false,
+        "isFeatured": true,
         "isFavorite": true,
         "park": "Klondike Gold Rush National Historical Park",
         "coordinates": {
@@ -85,7 +85,7 @@
         "city": "Icy Bay",
         "state": "Alaska",
         "id": 1008,
-        "isFeatured": false,
+        "isFeatured": true,
         "isFavorite": false,
         "park": "Wrangell-St. Elias National Park and Preserve",
         "coordinates": {
@@ -133,7 +133,7 @@
         "city": "Chincoteague",
         "state": "Virginia",
         "id": 1011,
-        "isFeatured": false,
+        "isFeatured": true,
         "isFavorite": false,
         "park": "Chincoteague National Wildlife Refuge",
         "coordinates": {

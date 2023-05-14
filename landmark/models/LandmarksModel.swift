@@ -15,7 +15,7 @@ final class ModelData: ObservableObject {
     
     var featured: [LandMarkData] {
         landmarks.filter { landmark in
-            landmark.isFavorite
+            landmark.isFeatured
         }
     }
     
